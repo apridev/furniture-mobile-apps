@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:furniture_app/pages/forget-password.dart';
 import 'package:furniture_app/pages/login-page.dart';
 import 'package:furniture_app/pages/registrasi-page.dart';
+import 'package:furniture_app/pages/reset-password.dart';
 import 'package:furniture_app/pages/verification-page.dart';
 import 'package:furniture_app/providers/is-hidden-password.dart';
 import 'package:provider/provider.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
           '/registrasi-page':(context) => RegisterPage(),
           '/verification-page':(context) => VerificationPage(),
           '/forget-password':(context) => ForgetPassword(),
+          '/reset-password':(context) => ResetPassword(),
         },
       ),
     );
