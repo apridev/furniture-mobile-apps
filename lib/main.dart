@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:furniture_app/home/cart-page.dart';
+import 'package:furniture_app/home/history-page.dart';
+import 'package:furniture_app/home/home-page.dart';
+import 'package:furniture_app/home/main-page.dart';
+import 'package:furniture_app/home/profile-page.dart';
+import 'package:furniture_app/home/search-page.dart';
 import 'package:furniture_app/pages/forget-password.dart';
 import 'package:furniture_app/pages/login-page.dart';
 import 'package:furniture_app/pages/registrasi-page.dart';
@@ -35,6 +41,12 @@ class MyApp extends StatelessWidget {
           '/verification-page':(context) => VerificationPage(),
           '/forget-password':(context) => ForgetPassword(),
           '/reset-password':(context) => ResetPassword(),
+          '/main-page':(context) => MainPage(),
+          '/home-page':(context) => HomePage(),
+          '/search-page':(context) => SearchPage(),
+          '/cart-page':(context) => CartPage(),
+          '/history-page':(context) => HistoryPage(),
+          '/profile-page':(context) => ProfilePage(),
         },
       ),
     );
