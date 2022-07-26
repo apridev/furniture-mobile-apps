@@ -8,6 +8,7 @@ Color backgroundColor = const Color(0xffffffff);
 Color inputBorderColor = const Color(0xffECECEC);
 Color redNotifColor = const Color(0xffF37065);
 Color yellowStar = const Color(0xffFBBC05);
+Color iconNavbarColor = const Color(0xffC3C3C3);
 
 TextStyle primaryFontStyle = GoogleFonts.montserrat(
   color:  primaryColor
@@ -31,6 +32,10 @@ TextStyle redNotifFontStyle = GoogleFonts.montserrat(
 
 TextStyle yellowStaFontStyle = GoogleFonts.montserrat(
   color:  yellowStar
+);
+
+TextStyle iconNavbarStyle = GoogleFonts.montserrat(
+  color:  iconNavbarColor
 );
 
 FontWeight regular = FontWeight.w400;
