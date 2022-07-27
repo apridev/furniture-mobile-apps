@@ -145,48 +145,13 @@ class _HomePageState extends State<HomePage> {
           child: Container(
             margin: EdgeInsets.only(left: 20, right: 10),
             child: Row(
-              children: [
-                ProductTile(
-                    thumbnail: 'assets/img/product-1.png',
-                    name: 'Hipster Green Long Sofa...',
-                    categories: 'Sofa',
-                    rating: 4.4,
-                    review: '1k',
-                    price: 399
-                ),
-                ProductTile(
-                    thumbnail: 'assets/img/product-1.png',
-                    name: 'Hipster Green Long Sofa...',
-                    categories: 'Sofa',
-                    rating: 4.4,
-                    review: '1k',
-                    price: 399
-                ),
-                ProductTile(
-                    thumbnail: 'assets/img/product-1.png',
-                    name: 'Hipster Green Long Sofa...',
-                    categories: 'Sofa',
-                    rating: 4.4,
-                    review: '1k',
-                    price: 399
-                ),
-                ProductTile(
-                    thumbnail: 'assets/img/product-1.png',
-                    name: 'Hipster Green Long Sofa...',
-                    categories: 'Sofa',
-                    rating: 4.4,
-                    review: '1k',
-                    price: 399
-                ),
-                ProductTile(
-                    thumbnail: 'assets/img/product-1.png',
-                    name: 'Hipster Green Long Sofa...',
-                    categories: 'Sofa',
-                    rating: 4.4,
-                    review: '1k',
-                    price: 399
-                ),
-              ],
+              children:[
+                ProductTile(),
+                ProductTile(),
+                ProductTile(),
+                ProductTile(),
+                ProductTile(),
+              ]
             ),
           ),
         ),
