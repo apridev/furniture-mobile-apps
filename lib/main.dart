@@ -6,12 +6,14 @@ import 'package:furniture_app/home/home-page.dart';
 import 'package:furniture_app/home/main-page.dart';
 import 'package:furniture_app/home/profile-page.dart';
 import 'package:furniture_app/home/search-page.dart';
+import 'package:furniture_app/home/splash-screen.dart';
 import 'package:furniture_app/pages/forget-password.dart';
 import 'package:furniture_app/pages/login-page.dart';
 import 'package:furniture_app/pages/registrasi-page.dart';
 import 'package:furniture_app/pages/reset-password.dart';
 import 'package:furniture_app/pages/verification-page.dart';
 import 'package:furniture_app/providers/is-hidden-password.dart';
+import 'package:furniture_app/providers/product-provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -31,12 +33,16 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (context) => HiddenPasswordProvider()
-        )
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ProductProvider()
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          '/' :(context) => LoginPage(),
+          '/' :(context) => SplashPage(),
+          '/login-page' :(context) => LoginPage(),
           '/registrasi-page':(context) => RegisterPage(),
           '/verification-page':(context) => VerificationPage(),
           '/forget-password':(context) => ForgetPassword(),
